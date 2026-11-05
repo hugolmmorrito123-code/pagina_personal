@@ -1,0 +1,143 @@
+ CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONDO DE LA PÁGINA */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #d9efff, #b9dcff, #eaf6ff);
+    background-attachment: fixed;
+    color: #26374d;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(135deg, #063568, #087fd1, #38bdf8);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+    box-shadow: 0 5px 20px #07598555;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #00000055;
+}
+
+/* MENÚ */
+nav {
+    background: linear-gradient(90deg, #082b52, #075b9c);
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 4px 10px #00000025;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #75e0ff;
+    text-shadow: 0 0 8px #75e0ff;
+}
+
+/* SECCIONES */
+section {
+    background: rgba(255, 255, 255, 0.95);
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px #1769aa25;
+    border: 1px solid #d2eaff;
+}
+
+/* TÍTULOS */
+h2 {
+    color: #0873bd;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px #b9dcff;
+}
+
+/* PÁRRAFOS */
+p {
+    line-height: 1.8;
+}
+
+/* CONTENEDORES */
+.contenedor {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* TARJETAS */
+.tarjeta {
+    background: linear-gradient(135deg, #e4f4ff, #c5e5ff);
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 180px;
+    box-shadow: 0 4px 12px #1684c522;
+    border: 1px solid #b4dcfa;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px #1684c544;
+}
+
+/* FOTO DEL INSTITUTO */
+.estudio img {
+    display: block;
+    width: 700px;
+    height: 500px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px #07598555;
+    border: 3px solid white;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: linear-gradient(135deg, #082b52, #087fd1);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .estudio img {
+        width: 100%;
+        max-width: 450px;
+        height: 250px;
+    }
+}
